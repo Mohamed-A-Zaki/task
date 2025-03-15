@@ -48,7 +48,7 @@ export function Timer() {
   }, []);
 
   return (
-    <div className="font-[500] text-[8px] flex flex-row-reverse justify-between w-full">
+    <div className="flex w-full flex-row-reverse justify-between text-[8px] font-[500]">
       <TimeUnit value={timeLeft.seconds} label="ثانية" />
       <TimerDots />
       <TimeUnit value={timeLeft.minutes} label="دقيقة" />
@@ -61,18 +61,18 @@ export function Timer() {
 }
 
 const TimeUnit = ({ value, label }: { value: number; label: string }) => (
-  <div className="flex flex-col gap-0.5 text-center mx-0.5">
+  <div className="mx-0.5 flex flex-col gap-0.5 text-center">
     <span className="text-[#333333]">{value}</span>
     <span className="text-[#636363]">{label}</span>
   </div>
 );
 
 const TimerDots = () => (
-  <div className="flex flex-col gap-0.5 justify-center">
+  <div className="flex flex-col justify-center gap-0.5">
     {[...new Array(2)].map((_, index) => (
       <span
         key={index}
-        className="w-[2px] h-[2px] rounded-full bg-[#63636333] block"
+        className="block h-[2px] w-[2px] rounded-full bg-[#63636333]"
       />
     ))}
   </div>
