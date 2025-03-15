@@ -6,7 +6,7 @@ import line from "@/assets/Line.svg";
 import { EventHeader } from "@/components/EventCard/EventHeader";
 import { EventLocation } from "@/components/EventCard/EventLocation";
 import { EventFeatures } from "@/components/EventCard/EventFeatures";
-import { Timer } from "@/components/Timer";
+import { Timer } from "@/components/EventCard/Timer";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {

@@ -1,4 +1,3 @@
-
 export interface EventDetails {
   title: string;
   subtitle: string;
