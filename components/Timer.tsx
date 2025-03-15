@@ -68,8 +68,12 @@ const TimeUnit = ({ value, label }: { value: number; label: string }) => (
 );
 
 const TimerDots = () => (
-  <span className="flex flex-col gap-0.5 justify-center">
-    <span className="w-[2px] h-[2px] rounded-full bg-[#63636333] block"></span>
-    <span className="w-[2px] h-[2px] rounded-full bg-[#63636333] block"></span>
-  </span>
+  <div className="flex flex-col gap-0.5 justify-center">
+    {[...new Array(2)].map((_, index) => (
+      <span
+        key={index}
+        className="w-[2px] h-[2px] rounded-full bg-[#63636333] block"
+      />
+    ))}
+  </div>
 );
