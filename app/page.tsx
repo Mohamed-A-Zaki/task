@@ -1,103 +1,97 @@
+import qrCode from "@/assets/qrcode.svg";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import line from "@/assets/Line.svg";
 
 export default function Home() {
+  // shadow-[0px_4px_6px_0px_rgba(0,0,0,0.25)]
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <div className="p-4 flex gap-5 bg-white  w-[303px] h-[147px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl">
+        <div className="flex flex-col justify-between">
+          <div className="flex flex-col gap-0.5">
+            <h3 className="font-[500] text-[12px] text-[#676767]">
+              تنظيف صحي يعني حياة أفضل
+            </h3>
+            <p className="font-[400] text-[8px] text-[#7E7E7E]">
+              هذا النص هو مثال لنص يستبدل
+            </p>
+          </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          <div className="flex items-center gap-1">
+            <div className="bg-[#EEEEEE] w-[24px] h-[24px] rounded-[4px]"></div>
+            <div className="flex flex-col gap-0.5">
+              <div className="font-[500] text-[8px] text-[#7E7E7E]">
+                موقع الورشة
+              </div>
+              <div className="font-[400] text-[8px] text-[#7E7E7E]">
+                يتم عمل الورشة عبر موقع الزوم
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-0.5">
+            <div className="font-[400] text-[8px] text-[#7E7E7E]">
+              ✅ كيفية عمل مزيل عرق منزلي{" "}
+            </div>
+            <div className="font-[400] text-[8px] text-[#7E7E7E]">
+              ✅ وصفات طبيعية سهلة وفعّالة{" "}
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        <Image src={line} alt="line" />
+
+        <div className="flex-1 flex flex-col justify-between items-center">
+          <div className="font-[500] text-[8px] flex flex-row-reverse justify-between w-full">
+            <div className="flex flex-col gap-0.5">
+              <span className="text-[#333333]">15</span>
+              <span className="text-[#636363]">ثانية</span>
+            </div>
+            <>
+              <span className="flex flex-col gap-0.5 justify-center">
+                <span className="w-[2px] h-[2px] rounded-full bg-[#63636333] block"></span>
+                <span className="w-[2px] h-[2px] rounded-full bg-[#63636333] block"></span>
+              </span>
+            </>
+            <div className="flex flex-col gap-0.5">
+              <span className="text-[#333333]">20</span>
+              <span className="text-[#636363]">دقيقة</span>
+            </div>
+            <>
+              <span className="flex flex-col gap-0.5 justify-center">
+                <span className="w-[2px] h-[2px] rounded-full bg-[#63636333] block"></span>
+                <span className="w-[2px] h-[2px] rounded-full bg-[#63636333] block"></span>
+              </span>
+            </>
+            <div className="flex flex-col gap-0.5">
+              <span className="text-[#333333]">25</span>
+              <span className="text-[#636363]">ساعة</span>
+            </div>
+            <>
+              <span className="flex flex-col gap-0.5 justify-center">
+                <span className="w-[2px] h-[2px] rounded-full bg-[#63636333] block"></span>
+                <span className="w-[2px] h-[2px] rounded-full bg-[#63636333] block"></span>
+              </span>
+            </>
+            <div className="flex flex-col gap-0.5">
+              <span className="text-[#333333]">30</span>
+              <span className="text-[#636363]">يوم</span>
+            </div>
+          </div>
+
+          <div>
+            <Image src={qrCode} alt="qrCode" />
+          </div>
+
+          <Button className="bg-[#353535] text-[#F8F8F8] font-[500] text-[8px] h-[26px] cursor-pointer">
+            احجز تذكرتك
+          </Button>
+        </div>
+
+        <div className="bg-[#D9D9D9] w-[27px] h-[27px] rounded-full absolute top-0 -translate-y-1/2 right-[175px]"></div>
+        <div className="bg-[#D9D9D9] w-[27px] h-[27px] rounded-full absolute bottom-0 right-[175px] translate-y-1/2"></div>
+      </div>
+    </>
   );
 }
