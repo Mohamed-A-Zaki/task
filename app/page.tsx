@@ -2,6 +2,7 @@ import qrCode from "@/assets/qrcode.svg";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import line from "@/assets/Line.svg";
+import { Timer } from "@/components/Timer";
 
 export default function Home() {
   // shadow-[0px_4px_6px_0px_rgba(0,0,0,0.25)]
@@ -43,42 +44,7 @@ export default function Home() {
         <Image src={line} alt="line" />
 
         <div className="flex-1 flex flex-col justify-between items-center">
-          <div className="font-[500] text-[8px] flex flex-row-reverse justify-between w-full">
-            <div className="flex flex-col gap-0.5">
-              <span className="text-[#333333]">15</span>
-              <span className="text-[#636363]">ثانية</span>
-            </div>
-            <>
-              <span className="flex flex-col gap-0.5 justify-center">
-                <span className="w-[2px] h-[2px] rounded-full bg-[#63636333] block"></span>
-                <span className="w-[2px] h-[2px] rounded-full bg-[#63636333] block"></span>
-              </span>
-            </>
-            <div className="flex flex-col gap-0.5">
-              <span className="text-[#333333]">20</span>
-              <span className="text-[#636363]">دقيقة</span>
-            </div>
-            <>
-              <span className="flex flex-col gap-0.5 justify-center">
-                <span className="w-[2px] h-[2px] rounded-full bg-[#63636333] block"></span>
-                <span className="w-[2px] h-[2px] rounded-full bg-[#63636333] block"></span>
-              </span>
-            </>
-            <div className="flex flex-col gap-0.5">
-              <span className="text-[#333333]">25</span>
-              <span className="text-[#636363]">ساعة</span>
-            </div>
-            <>
-              <span className="flex flex-col gap-0.5 justify-center">
-                <span className="w-[2px] h-[2px] rounded-full bg-[#63636333] block"></span>
-                <span className="w-[2px] h-[2px] rounded-full bg-[#63636333] block"></span>
-              </span>
-            </>
-            <div className="flex flex-col gap-0.5">
-              <span className="text-[#333333]">30</span>
-              <span className="text-[#636363]">يوم</span>
-            </div>
-          </div>
+          <Timer />
 
           <div>
             <Image src={qrCode} alt="qrCode" />
